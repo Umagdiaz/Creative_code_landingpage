@@ -1,0 +1,19 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+
+font-family: 'Syne', sans-serif;
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+</style>
+_________________________________________________________________________________________________
+font-family: 'Space Mono', monospace;
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
