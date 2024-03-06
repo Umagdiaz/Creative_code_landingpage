@@ -7,25 +7,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="stylesheet/css/style.css">
-        <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
+        <link rel="stylesheet" href="stylesheet/css/3d_style.css">
+        <link rel="stylesheet" href="stylesheet/css/footer.css">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     </head>
     <body>
         
-        <nav>
+        <nav id="navbar">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Types</a></li>
                 <li><a href="#contact">Creatives</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>    
         </nav>
        
         <section id="about" class="about">
             <div class="empty sticky"><img src="img/lineas_geometria.png" ></img></div>
             <article>
-                <div class="title">
+                <div id="first-section" class="title">
                     <h1>Creative Coding</h1>
                 </div>
                 <div class="description"> 
@@ -51,8 +52,9 @@
 
         <section id="services" class="service service-css sticky">
             <article>
-                <figure>
-                    <img src="img/cubo.gif" alt="3d cube" width="300"></img>
+                <figure id="3d_figure">
+                        <div id="geometry-container"></div>
+                        <div id="text-container">Hello !</div>      
                 </figure>
                 <div class="text">
                     <h2>3D</h2>
@@ -68,9 +70,9 @@
                     <img src="img/particulas_blog.gif" alt="moving green abstract lines in pink field" width="200"></img>
                 </figure>
                 <div class="text">
-                    <h2>Interactive</h2>
+                    <h2>Generative</h2>
                     <p>Products and services on digital computer-based systems that respond to the user's actions by presenting content such as text, graphics, animation, video and audio.</p>   
-                    <a href="https://en.wikipedia.org/wiki/Processing"><p>More about interactive coding</p></a>
+                    <a href="https://en.wikipedia.org/wiki/Processing"><p>More about generative art</p></a>
                 </div>
             </article>
         </section> 
@@ -148,8 +150,25 @@
                 </li>
             </ul>
         </section>
-
+        <footer>
+            <div id="canvasContainer"></div> 
+                <section id="footer" class="last">
+                    <ul class="redes-sociales">
+                      <li><a href="#"><i class="fab fa-facebook">Facebook</i></a></li>
+                      <li><a href="#"><i class="fab fa-Behance">Behance</i></a></li>
+                      <li><a href="#"><i class="fab fa-githyb">Github</i></a></li>
+                      <li><a href="#"><i class="fab fa-linkedin">Linkedin</i></a></li>
+                    </ul>
+                    <div class="back_top">
+                        <a href="#first-section">Back to the top</a>
+                    </div>
+                </section> 
+               
+        </footer>
         <script src="js/script.js"></script>
-        <script src="js/p5js.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="Js/3d.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.9.1/lib/p5.js"></script>
+        <script src="js/footer_p5js.js"></script>
     </body> 
 </html>
