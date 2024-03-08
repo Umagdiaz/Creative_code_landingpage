@@ -265,27 +265,34 @@ section.service.service-js .text a {
 /* contact section */
 
 section.contact {
-    align-items: center;
-    justify-content: center;
+    height:fit-content;
+    min-height: 100vh;
+    top: 0;
+    margin-top: 0;
+    display: grid;
+    gap: 0px;
+    width: 100%;
     background: linear-gradient(var(--blue), var(--green) 60%, var(--pink) 70%, var(--grey));
     border-radius: var(--border-radius);
 }
 
-.section.contact {
-	margin: 0 auto 100px auto;
-	max-width: 960px;
-}
-
 .show {
 	list-style: none;
-	padding: 0;
+	padding:0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 16px;
+    margin: 20px;
+    
 }
 
 .artworks {
 	width: 260px;
 	height: 400px;
-	margin: 30px;
-	float: left;
+	margin: 20px;
 	perspective: 1000px;
 }
 

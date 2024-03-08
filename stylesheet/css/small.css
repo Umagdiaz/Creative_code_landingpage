@@ -93,7 +93,6 @@
     }
 
     .artworks {
-    float: none;
     margin: 50px;
     }
 
@@ -106,8 +105,6 @@
     section.contact .artworks .art .back p {
         font-size: 14; 
     }
-
-
 
     footer{
         width: 100%;
