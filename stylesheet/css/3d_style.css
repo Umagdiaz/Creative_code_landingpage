@@ -34,27 +34,22 @@ figure#3d_figure {
 }
 
 @media only screen and (max-width: 768px) {
-    
-    figure#3d_figure {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100px;
-        flex: 1;
-        display: flex;
-        align-items: center;
-        min-height: 10vh;
-        overflow: hidden;
+
+    #geometry-container, #text-container {
+        width: 100%; 
+        height: auto; 
     }
 
-    #geometry-container {
-        z-index: 1; 
-        background-color: transparent;
-        border-radius: 100px;
-        overflow: hidden;
-        height: 100%;
+    div#text-container {
+        font-size: 90px; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    div#text-container {
+        font-size: 70px;
     }
 }

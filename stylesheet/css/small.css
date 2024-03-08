@@ -24,6 +24,10 @@
     height: 60px;
    }
 
+   nav ul {
+    justify-content: space-evenly;
+   }
+
     nav ul li {
         margin-left: 20px;
     }
@@ -35,6 +39,16 @@
     nav ul li a:hover {
         font-size: 28px;
     }
+
+    section {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 60px);
+        top: 60px;
+       
+    }
+    
 
     section.about{
         display: flex;
@@ -77,16 +91,6 @@
         }
     }
 
-    div#text-container {
-        font-size: 90px;
-    }
-
-    @media only screen and (max-width: 450px) {
-        div#text-container {
-            font-size: 70px;
-        }
-    }
-
     section.contact {
         margin-top: 100px;
         height:fit-content;
@@ -104,30 +108,33 @@
 
     section.contact .artworks .art .back p {
         font-size: 14; 
-    }
+    } 
 
     footer{
         width: 100%;
-        height: 36vh;
+        height: 30vh;
         border-radius: var(--border-radius);
+        min-height:fit-content;
     }
 
     ul.redes-sociales {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        font-size: 20px;
-          
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        font-size: 20px;    
     }
 
     div.back_top a{
-        margin-top: 20px;
+        margin-top: 40px;
     }
     
     #canvasContainer{
         height: 100%;
-
     }
-  
+
+   section#footer {
+        min-height: fit-content;
+        padding: 10px 0;
+        margin: 10px 0;
+    }
 }
