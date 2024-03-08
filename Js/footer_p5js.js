@@ -1,5 +1,5 @@
 let textureCounter = 0;
-const maxTextureValue = 100; // Define un máximo para textureCounter
+const maxTextureValue = 140; // Define un máximo para textureCounter
 let canvas;
 
 function setup() {

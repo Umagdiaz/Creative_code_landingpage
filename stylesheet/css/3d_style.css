@@ -1,4 +1,4 @@
-#3d_figure {
+figure#3d_figure {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -22,7 +22,7 @@
     background-color: transparent;
     border-radius: 100px;
     overflow: hidden;
-    position: absolute;
+    height: 100%;
 }
 
 #text-container {
@@ -31,4 +31,30 @@
     font-weight: bold;
     font-size: 120px;
     color: #d6a3fb;  
+}
+
+@media only screen and (max-width: 768px) {
+    
+    figure#3d_figure {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        min-height: 10vh;
+        overflow: hidden;
+    }
+
+    #geometry-container {
+        z-index: 1; 
+        background-color: transparent;
+        border-radius: 100px;
+        overflow: hidden;
+        height: 100%;
+    }
 }
