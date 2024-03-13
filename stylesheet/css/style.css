@@ -210,6 +210,29 @@ section.service-js .text a p:hover {
     transition: all 0.2s ease-in;
 }
 
+#svg_container{
+    width: 400px;
+    height: 400px;
+}
+
+.text_animation{
+    font-family: 'Space Mono', monospace;
+}
+
+.line-path{
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    animation: animationLine 4s forwards;
+    transition: ease-in-out;
+    
+}
+
+@keyframes animationLine {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
 
 /* service section animations */
 

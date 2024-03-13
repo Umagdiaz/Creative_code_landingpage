@@ -41,7 +41,43 @@
         <section id="services" class="service service-html sticky">
             <article>
                 <figure>
-                    <img src="img/diamond.png" alt="moving diamond" width="200"></img>
+                    <div id="svg_container">
+                        <svg viewBox='-450 -450 900 900'>
+                            
+                            <path class="line-path" d='M-434,-298
+                                C-312,-159 91,-253 1,446' stroke="black" fill="none" stroke-width="50"/>           
+                            <path  class="line-path" id="textoPath2" d='M-429,216
+                                C-156,-20 162,187 451,270' stroke="url(#degradado)" fill="none" stroke-width="50" />
+                            <text  fill="white" font-size="30">
+                                    <textPath class="second_text" href="#textoPath2" startOffset="-40%">
+                                        <animate attributeName="startOffset" from="-40%" to="100%" begin="0s" dur="4s" repeatCount="indefinite"></animate>
+                                        animated animation 
+                                    </textPath>
+                            </text>
+                
+                            <path class="line-path" d='M77,443
+                                C65,34 326,28 454,-184' stroke="black" fill="none" stroke-width="50"/>
+                            
+                            <path class="line-path" id="textoPath" d='M-105,-460
+                                C-173,-182 202,-179 443,-68' stroke="url(#degradado)" fill="none" stroke-width="50"/>
+                            <text fill="white" font-size="30">
+                                    <textPath id="first_text" class="text_animation" href="#textoPath" startOffset="-40%" >
+                                    <animate attributeName="startOffset" from="-40%" to="120%" begin="1s" dur="6s" repeatCount="indefinite"></animate>
+                                    animated animation
+                                    </textPath>
+                                </text>
+                            <path  class="line-path" d='M-253,-443
+                                C-103,-182 202,-179 558,-240' stroke="black" fill="none" stroke-width="50"/>
+                
+                            <defs>
+                                <linearGradient id="degradado">
+                                    <stop offset="25%" stop-color="#1c47ff"></stop>
+                                    <stop offset="66%" stop-color="#1CA2FF"></stop>
+                                    <stop offset="90%" stop-color="#1c47ff"></stop> 
+                                </linearGradient>    
+                            </defs> 
+                          </svg>
+                    </div>
                 </figure>
                 <div class="text">
                     <h2>Animation</h2>
