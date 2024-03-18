@@ -101,9 +101,8 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffffff;
-    font-family: 'Italianno', cursive;
+    font-family: 'Syne', sans-serif;
     text-decoration:underline;
-    font-size: 40px;
 }
 
 
@@ -211,8 +210,12 @@ section.service-js .text a p:hover {
 }
 
 #svg_container{
-    width: 400px;
-    height: 400px;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text_animation{
@@ -412,7 +415,7 @@ section.contact {
 }
 
  .artworks:nth-child(1) .art .front {
-    background-image: url(/img/Petra_C.jpg);
+    background-image: url(/img/Petra_C_opt.jpg);
   }
   
   .artworks:nth-child(2) .art .front {

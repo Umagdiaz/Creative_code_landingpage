@@ -29,9 +29,8 @@ footer section.last .redes-sociales a, div.back_top a{
 }
 
 footer section.last .redes-sociales a:hover, div.back_top a:hover{ 
-    font-family: 'Italianno', cursive;
+    font-family: 'Syne', sans-serif;
     text-decoration:underline;
-    font-size: 40px;
     color: #fff;
 }
 
