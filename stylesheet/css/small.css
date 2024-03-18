@@ -79,6 +79,10 @@
         width: 40%;
     }
 
+    video.video_psjs{
+        width: 200px;
+    }
+
 
     @keyframes animation {
         0% {

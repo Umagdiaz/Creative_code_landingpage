@@ -17,7 +17,7 @@ A landing page, full of interactions about creative code with a brief explanatio
 
 ## features
 
-Animations and transitions **CSS** / **SVG** / 
+Animations and transitions **CSS** / **SVG** 
 
 Creating visuals with **P5.js**
 

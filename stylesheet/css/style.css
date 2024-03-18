@@ -259,6 +259,10 @@ section.service.service-html figure img {
     }
 }
 
+video.video_psjs{
+    width: 350px;
+}
+
 /* service section overrides */
 
 section.service.service-html figure {
@@ -294,7 +298,7 @@ section.contact {
     height:fit-content;
     min-height: 100vh;
     top: 0;
-    margin-top: 0;
+    margin-top: 100px;
     display: grid;
     gap: 0px;
     width: 100%;
