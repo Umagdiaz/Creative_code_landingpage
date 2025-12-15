@@ -2,28 +2,25 @@
 <html lang="en">
     <head>
         <title>Creative Blog</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="stylesheet/css/style.css">
-        <link rel="stylesheet" href="stylesheet/css/footer.css">
-        <link rel="stylesheet" href="stylesheet/css/small.css" media="screen and (max-width: 768px)">
-        <link rel="stylesheet" href="stylesheet/css/3d_style.css">
+        <link rel="stylesheet" href="stylesheet/css/main.css">  
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Web page about diferent types of creative code">        
+        <meta name="description" content="Web page about diferent services of creative code">        
     </head>
     <body>
-        
+    
         <nav id="navbar">
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Types</a></li>
+                <li><a href="#services-motion">Services</a></li>
                 <li><a href="#contact">Creatives</a></li>
                 <li><a href="#footer">Contact</a></li>
+                <li><a href="">Playground</a></li>
             </ul>    
         </nav>
-       
+
+        
+    <main>   
         <section id="about" class="about">
             <div class="empty sticky"><img src="img/lineas_geometria_opt.jpg" alt="abstract image black whit white lines"></img></div>
             <article>
@@ -38,7 +35,7 @@
             </article>   
         </section>
 
-        <section id="services" class="service service-html sticky">
+        <section id="services-motion" class="service service-animation sticky">
             <article>
                 <figure>
                     <div id="svg_container">
@@ -82,12 +79,12 @@
                 <div class="text">
                     <h2>Animation</h2>
                     <p>It allows users to hover over objects and an animation will play. Currently, it is adopted by all major search engines.</p>
-                    <a href="https://en.wikipedia.org/wiki/CSS_animations"><p>More about Animations</p></a>
+                    <a href="https://en.wikipedia.org/wiki/CSS_animations">More about Animations</a>
                 </div>
             </article> 
         </section>
 
-        <section id="services" class="service service-css sticky">
+        <section id="service-3d" class="service service-3d sticky">
             <article>
                 <figure id="3d_figure">
                         <div id="geometry-container"></div>
@@ -96,20 +93,30 @@
                 <div class="text">
                     <h2>3D</h2>
                     <p>Make it possible to author complex 3D computer animations for display in the browser without the effort required for a traditional standalone application or a plugin.</p>
-                    <a href="https://en.wikipedia.org/wiki/Three.js"><p>More about 3D</p></a>
+                    <a href="https://en.wikipedia.org/wiki/Three.js">More about 3D</a>
                 </div>
             </article>
         </section>
 
-        <section id="services" class="service service-js sticky">
+        <section id="services-generative" class="service service-p5 sticky">
             <article>
                 <figure>
-                    <video class="video_psjs" src="img/particulas_blog_opt.webm" alt="moving green abstract lines in pink field" alt="generative code abstract lines" type="video/webm" autoplay loop muted playsinline ></video>
+                    <video
+                    class="video_psjs"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    aria-label="Generative abstract particles animation"
+                    >
+                        <source src="img/particulas_blog_opt.webm" type="video/webm">
+                        <source src="img/particulas_blog_opt.mp4" type="video/mp4">
+                    </video>
                 </figure>
                 <div class="text">
                     <h2>Generative</h2>
                     <p>Products and services on digital computer-based systems that respond to the user's actions by presenting content such as text, graphics, animation, video and audio.</p>   
-                    <a href="https://en.wikipedia.org/wiki/Processing"><p>More about generative art</p></a>
+                    <a href="https://en.wikipedia.org/wiki/Processing">More about generative art</a>
                 </div>
             </article>
         </section> 
@@ -191,10 +198,9 @@
             <div id="canvasContainer"></div> 
                 <section id="footer" class="last">
                     <ul class="redes-sociales">
-                      <li><a href="#"><i class="fab fa-facebook">Facebook</i></a></li>
-                      <li><a href="#"><i class="fab fa-Behance">Behance</i></a></li>
-                      <li><a href="#"><i class="fab fa-githyb">Github</i></a></li>
-                      <li><a href="#"><i class="fab fa-linkedin">Linkedin</i></a></li>
+                      <li><a href="https://www.behance.net/umabaligranado" target="_blank" rel="noopener noreferrer"><i class="fab fa-Behance" target="_blank" rel="noopener noreferrer">Behance</i></a></li>
+                      <li><a href="https://github.com/Umagdiaz" target="_blank" rel="noopener noreferrer"><i class="fab fa-githyb">Github</i></a></li>
+                      <li><a href="https://linkedin.com/in/umabali-granado-díaz" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin">Linkedin</i></a></li>
                     </ul>
                     <div class="back_top">
                         <a href="#first-section">Back to the top</a>
@@ -202,9 +208,9 @@
                 </section>       
         </footer>
         <script src="js/script.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-        <script src="Js/3d.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/p5@1.9.1/lib/p5.js"></script>
         <script src="js/footer_p5js.js"></script>
+
+    </main>
     </body> 
 </html>
