@@ -502,6 +502,8 @@ section.last {
     section.about{
         display: flex;
         flex-direction: column;
+        top: var(--nav-height);
+
     }
 
     section.about article .title {
