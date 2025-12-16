@@ -375,7 +375,6 @@ section.contact {
   }
   
 /*footer*/
-
 footer{
     width: 100%;
     height: 33dvh;
@@ -443,33 +442,61 @@ section.last {
 
 
   @media only screen and (max-width: 768px) {
-    html, body {
+    :root {
         --border-radius: 25px;
         --gutter: 6.25vw;
     }
 
-   nav ul {
-    justify-content: space-evenly;
-   }
+    #about {
+        z-index: var(--z-section);
+    }
 
-    nav ul li {
-        margin-left: 20px;
+    #btn_menu {
+        position:fixed;
+        top: 20px;
+        left: 30px;
+        z-index: var(--z-overlay);
+        background-color: var(--color-bg);
+        border-color: var(--color-txt);
+        color: var(--color-txt);
+        padding: 0.5rem 1rem;
     }
 
     nav {
-        font-size: 18px;
+        background-color: var(--color-secondary-gray);
+        top: 0;
+        height: 66dvh;
+        position: fixed;
+        left: 0;
+        transform: translateY(-30px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
-    nav ul li a:hover {
-        font-size: 28px;
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 80px;
+
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    nav.is-open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
     }
 
     section {
         position: relative;
         display: flex;
-        width: 100%;
-        height: calc(100vh - 60px);
-       
+        width: 100dvw;
+        height: calc(100vh - var(--nav-height));
     }
     
     section.about{

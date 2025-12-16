@@ -1,3 +1,4 @@
+/*movimiento about*/ 
 let emptyElement = document.querySelector(".about .empty");
 let titleElement = document.querySelector(".about .title");
 
@@ -9,5 +10,16 @@ function handleMouseMove(event) {
 }
 
 
+/*menu*/
+const btnMenu = document.querySelector("#btn_menu");
+const nav = document.querySelector("#navbar");
+const links = nav.querySelector('a');
+
+btnMenu.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+
+    btnMenu.textContent = isOpen ? 'Close':'Menu';
+    btnMenu.setAttribute('aria-expanded', isOpen)
+});
 
 
