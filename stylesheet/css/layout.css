@@ -5,6 +5,11 @@
   }
 }
 
+#btn_menu {
+    pointer-events: none;
+    opacity: 0;
+}
+
 /*section*/
 section {
     position: relative;
@@ -452,14 +457,18 @@ section.last {
     }
 
     #btn_menu {
+         pointer-events: fill;
+        opacity: 1;
         position:fixed;
         top: 20px;
         left: 30px;
         z-index: var(--z-overlay);
-        background-color: var(--color-bg);
+        background-color: var(--color-secondary-gray);
         border-color: var(--color-txt);
         color: var(--color-txt);
         padding: 0.5rem 1rem;
+        border-radius: var(--border-radius);
+        font-family: var(--font-base);
     }
 
     nav {
