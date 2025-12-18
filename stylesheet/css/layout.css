@@ -568,12 +568,12 @@ section.last {
         height: 30vh;
         border-radius: var(--border-radius);
         min-height:fit-content;
+        
     }
 
     ul.redes-sociales {
         flex-direction: column;
-        gap: 2em;
-        align-items: center;
+        gap: 2em;  
     }
 
     div.back_top a{
