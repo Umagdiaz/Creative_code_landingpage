@@ -445,10 +445,10 @@ section.last {
     margin-top: 40px;
   }
 
-
   @media only screen and (max-width: 768px) {
+
     :root {
-        --border-radius: 25px;
+        --border-radius: 1.5em;
         --gutter: 6.25vw;
     }
 
@@ -457,7 +457,7 @@ section.last {
     }
 
     #btn_menu {
-         pointer-events: fill;
+        pointer-events: fill;
         opacity: 1;
         position:fixed;
         top: 20px;
@@ -543,7 +543,6 @@ section.last {
         width: 200px;
     }
 
-
     @keyframes animation {
         0% {
             transform: rotate(0deg) translateY(-5%);
@@ -572,10 +571,9 @@ section.last {
     }
 
     ul.redes-sociales {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-        font-size: 20px;    
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
     }
 
     div.back_top a{

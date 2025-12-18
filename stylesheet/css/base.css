@@ -37,7 +37,7 @@
     --font-base: 'Space Mono';
     --font-txt: -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     
-    --border-radius: 100px;
+    --border-radius: 3rem;
     --size-h1: clamp(3rem, 6vw, 6rem);
     --size-h2: clamp(2rem, 4vw, 4rem);
     --size-txt: clamp(1rem, 1.4vw, 1.4rem);
