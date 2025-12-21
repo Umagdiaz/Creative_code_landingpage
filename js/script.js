@@ -16,10 +16,13 @@ const nav = document.querySelector("#navbar");
 const links = nav.querySelector('a');
 
 btnMenu.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('is-open');
+  const isOpen = document.body.classList.toggle('menu-open');
 
-    btnMenu.textContent = isOpen ? 'Close':'Menu';
-    btnMenu.setAttribute('aria-expanded', isOpen)
+  nav.classList.toggle('is-open', isOpen);
+  btnMenu.classList.toggle('is-open', isOpen);
+
+  btnMenu.textContent = isOpen ? 'Close':'Menu';
+  btnMenu.setAttribute('aria-expanded', isOpen)
 });
 
 /*footer*/
