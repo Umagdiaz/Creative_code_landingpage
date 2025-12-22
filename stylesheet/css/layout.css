@@ -15,9 +15,8 @@ section {
     position: relative;
     display: flex;
     width: 100%;
-    height: calc(100dvh - var(--nav-height));
+    height: 100dvh;
     z-index: var(--z-section);
-    scroll-margin-top:var(--nav-height);
 }
 
 section.sticky {
@@ -445,27 +444,30 @@ section.last {
     }
 
     nav {
-        background-color: var(--color-secondary-gray);
+        background-color: var(--color-txt);
         top: 0;
-        height: 75dvh;
+        height: 80dvh;
         position: fixed;
         left: 0;
         transform: translateY(-30px);
         opacity: 0;
         pointer-events: none;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-        
+        transition: transform 0.3s ease, opacity 0.3s ease; 
     }
 
     nav ul {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-top: 80px;
+        margin-top: 100px;
     }
 
     nav ul li {
         margin-left: 0;
+    }
+
+    nav ul li a {
+        color: var(--color-secondary-gray)
     }
 
     nav.is-open {
@@ -483,7 +485,7 @@ section.last {
     }
 
     section {
-        height: calc(100dvh - 60px);
+        height: 100dvh;
     }
 
     section.service article{
@@ -491,20 +493,34 @@ section.last {
         flex-direction: column;
     }
 
-    section.sticky {
-        top: 50px;
+    section.sticky{
+        min-width: 100dvw;  
+        top: 70px; 
     }
 
-    section.service .sticky{
-        min-width: 100dvw;   
+    section.service figure {
+        display: flex;
+        flex: 0 0 40%;
     }
 
-    .video_p5js {
-        max-height: 33dvh;
+
+    section.service article figure video.video_p5js, 
+    section.service article figure svg  {
+        max-height: 80%;
+        max-width: 60%;
+    }
+
+    section.service .text {
+        flex: 0 0 60%;
+        justify-content: flex-start;
+    }
+
+    section.service .text h2{
+        margin: 0;
     }
     
     .artworks {
-    margin: 50px;
+        margin: 50px;
     }
 
     footer{   
