@@ -13,7 +13,7 @@ function handleMouseMove(event) {
 /*menu*/
 const btnMenu = document.querySelector("#btn_menu");
 const nav = document.querySelector("#navbar");
-const links = nav.querySelector('a');
+const links = nav.querySelectorAll('a');
 
 btnMenu.addEventListener('click', () => {
   const isOpen = document.body.classList.toggle('menu-open');
@@ -23,6 +23,16 @@ btnMenu.addEventListener('click', () => {
 
   btnMenu.textContent = isOpen ? 'Close':'Menu';
   btnMenu.setAttribute('aria-expanded', isOpen)
+});
+
+links.forEach( e => {
+  e.addEventListener('click', () => {
+    document.body.classList.remove('menu-open');
+    nav.classList.remove('is-open');
+    btnMenu.classList.remove('is-open');
+
+    btnMenu.setAttribute('aria-expanded', false)
+  })
 });
 
 /*footer*/
