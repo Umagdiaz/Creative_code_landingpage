@@ -192,14 +192,14 @@ section.service-p5 .text a:hover {
 @keyframes spin {
     from{
         transform: rotateX(0deg) rotateY(0deg)
-    };
+    }
     to {
         transform: rotateX(360deg) rotateY(360deg);
     }  
 }
 
 .cube {
-  animation: spin 5s infinite linear; /* Applies the rotation animation */
+  animation: spin 5s infinite linear; 
 }
 
 .face {
@@ -233,11 +233,11 @@ section.service-p5 .text a:hover {
 }
 
 .top {
-    transform: rotateY(90deg) translateX(100px);
+    transform: rotateX(90deg) translateZ(100px);
 }
 
 .bottom {
-     transform: rotateY(-90deg) translateX(100px);
+     transform: rotateX(-90deg) translateZ(100px);
 }
 
 section.service article figure video.video_p5js {
