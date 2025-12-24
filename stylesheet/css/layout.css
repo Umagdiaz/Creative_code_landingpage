@@ -206,13 +206,13 @@ section.service-p5 .text a:hover {
   position: absolute;
   width: 196px;
   height: 196px;
-  border: 2px solid white;
+  border: 2px solid var(--pink);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: white;
-  background-color: var(--pink); 
+  color: var(--pink);
+  background-color: var(--green); 
   opacity: 0.8;
 }
 
